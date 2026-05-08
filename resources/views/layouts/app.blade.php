@@ -28,7 +28,7 @@
 
             @auth
 
-                @role('admin')
+            
 
                     <div class="col-md-2 p-0">
 
@@ -37,20 +37,14 @@
                     </div>
 
                     <div class="col-md-10 p-4">
-
-                        {{ $slot }}
-
+                        @isset($slot)
+                             {{ $slot }}
+                        @else
+                              @yield('content')
+                        @endif  
                     </div>
 
-                @else
 
-                    <div class="col-12 p-4">
-
-                        {{ $slot }}
-
-                    </div>
-
-                @endrole
 
             @else
 

@@ -93,7 +93,7 @@
 
                         </h4>
 
-                        <span class="badge bg-dark mb-3">
+                        <span class="badge bg-dark mb-3 w-25">
 
                             {{ $serie->category->name }}
 
@@ -111,6 +111,14 @@
 
                         </p>
 
+                    </div>
+                    <div class="card-footer bg-transparent border-0 align-self-center">
+                        <a
+                            href="{{ route('serie.show', $serie->slug) }}"
+                            class="btn btn-primary w-100 align-self-center mb-3"
+                        >
+                            Ver detalhes
+                        </a>
                     </div>
 
                 </div>

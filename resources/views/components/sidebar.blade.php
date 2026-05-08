@@ -38,6 +38,15 @@
             </a>
 
         </li>
+        <li class="nav-item mb-2">
+
+            <a
+                href="{{route('admin.users')}}"
+                class="nav-link"
+            >
+                Usuários
+            </a>
+        </li>
 
     </ul>
 
